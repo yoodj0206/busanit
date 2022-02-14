@@ -11,7 +11,7 @@ else: print('none')                                     #그렇지 않다면 non
 # 02 while문을 사용해 1부터 1000까지의 자연수 중 3의 배수의 합을 구해 보자.
 result=0
 i=1
-while i < 1000:
+while i <= 1000:
     if i%3==0:
         result+=i
     i+=1
@@ -49,5 +49,5 @@ for n in number:
 print(result)
 
 number=[1,2,3,4,5]
-result=[(n*2) for n in number if n%2==1]
+result=[n*2 for n in number if n%2==1]
 print(result)
