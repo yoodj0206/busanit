@@ -81,9 +81,53 @@
 # print(result)
 # print(type(result))
 
-def add_and_mul(a,b):
-    return a+b, a*b
-result1, result2=add_and_mul(3,4)
-print(result1, result2)
-print(type(result1))
-print(type(result2))
+# def add_and_mul(a,b):
+#     return a+b, a*b
+# result1, result2=add_and_mul(3,4)
+# print(result1, result2)
+# print(type(result1))
+# print(type(result2))
+
+# def say_myself(name, old, man=True): 
+#     print("나의 이름은 %s 입니다." % name) 
+#     print("나이는 %d살입니다." % old) 
+#     if man: 
+#         print("남자입니다.")
+#     else: 
+#         print("여자입니다.")
+# print(say_myself('홍길동', 23))
+# print(say_myself('홍길동', 23, True))
+# print(say_myself('박응선', 27, False))
+
+# def say_myself(name, man=True, old): 
+#     print("나의 이름은 %s 입니다." % name) 
+#     print("나이는 %d살입니다." % old) 
+#     if man: 
+#         print("남자입니다.") 
+#     else: 
+#         print("여자입니다.")
+# print(say_myself('홍길동', 23)) //초깃값을 설정해 놓은 매개변수 뒤에 초깃값을 설정해 놓지 않은 매개변수는 사용할 수 없다는 뜻
+
+#함수 안에서 선언한 변수의 효력 범위
+# a = 1
+# def vartest(a):
+#     a = a +1
+#     print('함수안의 a의 값 %d' % a)
+# vartest(a)
+# print('함수밖의 a의 값 %d' % a)
+
+#
+# a=1                 #전역변수
+# def vartest(a):     #--
+#     a+=1            # | 지역변수
+#     return a        #--
+# a=vartest(a)
+# print(a)
+
+# a = 1 
+# def vartest(): 
+#     global a 
+#     a = a+1
+
+# vartest() 
+# print(a)
