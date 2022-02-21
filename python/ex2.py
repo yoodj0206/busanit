@@ -1,3 +1,4 @@
+# 03장 연습문제
 # 01 다음 코드의 결과 값은 무엇일까?
 a='Life is too short, you need python'
 
